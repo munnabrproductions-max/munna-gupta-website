@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Munna Gupta — Video Editor</title>
+<meta name="description" content="Munna Gupta - Video Editor. 2 saal ka experience, Premiere Pro expert. Reels, effects aur transitions ka kaam.">
+<style>
+  :root{
+    --bg:#0a0a0d;
+    --bg-panel:#111116;
+    --text:#eeeeee;
+    --text-dim:#8a8a92;
+    --cyan:#00e5ff;
+    --red:#ff2b54;
+    --line:#232329;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Segoe UI', Arial, sans-serif;
+    line-height:1.6;
+  }
+  @font-face{}
+  .wrap{max-width:920px; margin:0 auto; padding:0 24px;}
+
+  /* HERO */
+  header.hero{
+    padding:80px 0 60px;
+    border-bottom:1px solid var(--line);
+    position:relative;
+    overflow:hidden;
+  }
+  .hero-inner{
+    display:flex;
+    align-items:center;
+    gap:48px;
+    flex-wrap:wrap;
+  }
+  .photo-frame{
+    position:relative;
+    width:220px;
+    height:220px;
+    flex-shrink:0;
+  }
+  .photo-frame img{
+    width:100%; height:100%;
+    object-fit:cover;
+    border-radius:6px;
+    display:block;
+  }
+  .photo-frame::before,
+  .photo-frame::after{
+    content:'';
+    position:absolute;
+    inset:0;
+    border-radius:6px;
+    pointer-events:none;
+  }
+  .photo-frame::before{
+    box-shadow: -6px 0 0 -3px var(--cyan);
+    opacity:0.6;
+  }
+  .photo-frame::after{
+    box-shadow: 6px 0 0 -3px var(--red);
+    opacity:0.5;
+  }
+
+  .hero-text .eyebrow{
+    color:var(--text-dim);
+    letter-spacing:3px;
+    font-size:12px;
+    text-transform:uppercase;
+    margin-bottom:14px;
+  }
+  h1.glitch{
+    font-size:52px;
+    font-weight:800;
+    letter-spacing:1px;
+    position:relative;
+    color:var(--text);
+    text-shadow:
+      2px 0 var(--cyan),
+      -2px 0 var(--red);
+    line-height:1.1;
+  }
+  .hero-text p.tag{
+    margin-top:16px;
+    color:var(--text-dim);
+    font-size:17px;
+    max-width:480px;
+  }
+  .hero-text .badges{
+    margin-top:22px;
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+  }
+  .badge{
+    border:1px solid var(--line);
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:13px;
+    color:var(--text-dim);
+  }
+
+  section{padding:56px 0; border-bottom:1px solid var(--line);}
+  section h2{
+    font-size:13px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    color:var(--cyan);
+    margin-bottom:24px;
+  }
+  .about p{color:var(--text-dim); font-size:16px; max-width:640px;}
+
+  .work-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:28px;
+  }
+  @media(max-width:640px){ .work-grid{grid-template-columns:1fr;} .hero-inner{flex-direction:column; text-align:center;} .hero-text p.tag{margin-left:auto; margin-right:auto;} }
+
+  .card{
+    background:var(--bg-panel);
+    border:1px solid var(--line);
+    border-radius:8px;
+    overflow:hidden;
+  }
+  .card img{width:100%; display:block; aspect-ratio:4/5; object-fit:cover;}
+  .card .card-label{
+    padding:14px 16px;
+    font-size:14px;
+    color:var(--text-dim);
+  }
+  .card .card-label strong{color:var(--text); display:block; margin-bottom:2px;}
+
+  .video-card{
+    display:flex; flex-direction:column;
+    justify-content:center; align-items:center;
+    text-align:center;
+    padding:32px 20px;
+  }
+  .video-card a{
+    color:var(--bg);
+    background:var(--cyan);
+    padding:10px 22px;
+    border-radius:22px;
+    font-weight:600;
+    text-decoration:none;
+    font-size:14px;
+    margin-top:14px;
+    display:inline-block;
+  }
+
+  footer{
+    padding:40px 0 60px;
+    text-align:center;
+    color:var(--text-dim);
+    font-size:14px;
+  }
+  footer a{color:var(--cyan); text-decoration:none;}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="photo-frame">
+        <img src="images/profile.png" alt="Munna Gupta">
+      </div>
+      <div class="hero-text">
+        <div class="eyebrow">Video Editor · Premiere Pro</div>
+        <h1 class="glitch">Munna Gupta</h1>
+        <p class="tag">2 saal se video editing kar raha hoon. Reels, effects aur transitions me expertise — content jo attention rokta hai.</p>
+        <div class="badges">
+          <span class="badge">2+ Years Experience</span>
+          <span class="badge">Adobe Premiere Pro</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="about">
+    <h2>About</h2>
+    <p>Main Munna Gupta hoon, ek video editor jo pichle 2 saal se Adobe Premiere Pro pe kaam kar raha hai. Mera focus hai creative effects, smooth transitions, aur social media ke liye engaging reels banana. Har project me detail aur timing pe dhyan deta hoon taaki content professional aur eye-catching lage.</p>
+  </section>
+
+  <section class="work">
+    <h2>Work</h2>
+    <div class="work-grid">
+      <div class="card">
+        <img src="images/work-sample.png" alt="Editing sample by Munna Gupta">
+        <div class="card-label">
+          <strong>Creative Edit</strong>
+          Custom effect aur staging ke sath banaya gaya sample
+        </div>
+      </div>
+      <div class="card video-card">
+        <strong>Latest Reel</strong>
+        <span style="color:var(--text-dim); font-size:14px;">Instagram pe dekho</span>
+        <a href="https://www.instagram.com/reel/DbKP3tszMiw/" target="_blank" rel="noopener">Watch Reel →</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Contact ke liye Instagram pe message karo · <a href="https://www.instagram.com/reel/DbKP3tszMiw/" target="_blank" rel="noopener">Instagram</a>
+  </footer>
+</div>
+
+</body>
+</html>
